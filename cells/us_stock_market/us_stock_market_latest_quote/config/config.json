@@ -1,0 +1,6 @@
+{
+    "endpoint_path": "/stocks/quotes/latest",
+    "default_feed": "iex",
+    "request_timeout_seconds": 15,
+    "default_include_raw": false
+}

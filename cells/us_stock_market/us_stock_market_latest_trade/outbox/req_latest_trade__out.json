@@ -1,0 +1,61 @@
+{
+  "message": {
+    "source": "US Stock_market_latest_trade",
+    "timestamp": "2026-03-10T16:58:15.994299+00:00",
+    "data": {
+      "normalized": [
+        {
+          "symbol": "AAPL",
+          "price": 261.22,
+          "size": 100,
+          "timestamp": "2026-03-10T16:58:05.851823438Z",
+          "exchange_code": "V"
+        },
+        {
+          "symbol": "MSFT",
+          "price": 406.44,
+          "size": 80,
+          "timestamp": "2026-03-10T16:58:11.550477888Z",
+          "exchange_code": "V"
+        }
+      ],
+      "request_meta": {
+        "symbols": "AAPL,MSFT",
+        "feed": "iex",
+        "queried_at": "2026-03-10T16:58:15.993299+00:00"
+      },
+      "raw": {
+        "trades": {
+          "AAPL": {
+            "c": [
+              "@"
+            ],
+            "i": 7129,
+            "p": 261.22,
+            "s": 100,
+            "t": "2026-03-10T16:58:05.851823438Z",
+            "x": "V",
+            "z": "C"
+          },
+          "MSFT": {
+            "c": [
+              "@"
+            ],
+            "i": 9574,
+            "p": 406.44,
+            "s": 80,
+            "t": "2026-03-10T16:58:11.550477888Z",
+            "x": "V",
+            "z": "C"
+          }
+        }
+      }
+    },
+    "error": null,
+    "details": null
+  },
+  "status": "OK",
+  "lim_aplc": {
+    "tx_id": "TX_SAMPLE_US Stock_LATEST_TRADE"
+  }
+}

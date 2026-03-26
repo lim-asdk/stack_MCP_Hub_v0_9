@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Stock MCP Universal Cell Tester</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --panel: #111827;
+            --panel-2: #0b1220;
+            --line: #233047;
+            --text: #e5e7eb;
+            --muted: #94a3b8;
+            --accent: #60a5fa;
+            --good: #34d399;
+            --bad: #f87171;
+            --warn: #fbbf24;
+            --mono: Consolas, "Courier New", monospace;
+            --sans: "Segoe UI", Arial, sans-serif;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background:
+                radial-gradient(circle at top left, rgba(96, 165, 250, 0.18), transparent 28%),
+                radial-gradient(circle at top right, rgba(52, 211, 153, 0.12), transparent 24%),
+                var(--bg);
+            color: var(--text);
+            font-family: var(--sans);
+        }
+
+        .shell {
+            width: min(1440px, calc(100vw - 32px));
+            margin: 16px auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            padding: 16px 18px;
+            background: rgba(17, 24, 39, 0.9);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25);
+        }
+
+        .brand h1 {
+            margin: 0;
+            font-size: 18px;
+            letter-spacing: -0.02em;
+        }
+
+        .brand p {
+            margin: 6px 0 0;
+            color: var(--muted);
+            font-size: 12px;
+        }
+
+        .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: rgba(52, 211, 153, 0.12);
+            color: #c6f6df;
+            border: 1px solid rgba(52, 211, 153, 0.22);
+            font-size: 12px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--good);
+            box-shadow: 0 0 0 6px rgba(52, 211, 153, 0.15);
+        }
+
+        .grid {
+            margin-top: 16px;
+            display: grid;
+            grid-template-columns: minmax(320px, 420px) 1fr;
+            gap: 16px;
+            min-height: calc(100vh - 112px);
+        }
+
+        .card {
+            background: rgba(17, 24, 39, 0.92);
+            border: 1px solid var(--line);
+            border-radius: 16px;
+            padding: 16px;
+            box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+            display: flex;
+            flex-direction: column;
+            min-height: 0;
+        }
+
+        .section-title {
+            margin: 0 0 12px;
+            font-size: 13px;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        label {
+            display: block;
+            margin: 14px 0 8px;
+            font-size: 12px;
+            color: var(--muted);
+            font-weight: 600;
+        }
+
+        select, input, textarea {
+            width: 100%;
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            background: var(--panel-2);
+            color: var(--text);
+            outline: none;
+            font-family: var(--mono);
+            font-size: 13px;
+        }
+
+        select, input {
+            padding: 12px 14px;
+        }
+
+        textarea {
+            min-height: 220px;
+            padding: 14px;
+            resize: vertical;
+            line-height: 1.5;
+        }
+
+        select:focus, input:focus, textarea:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.12);
+        }
+
+        .meta {
+            margin-top: 12px;
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(15, 23, 42, 0.72);
+            border: 1px solid rgba(148, 163, 184, 0.18);
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.55;
+            min-height: 64px;
+        }
+
+        .actions {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        button {
+            border: none;
+            border-radius: 12px;
+            padding: 12px 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.12s ease, opacity 0.12s ease, filter 0.12s ease;
+            color: white;
+        }
+
+        button:hover { filter: brightness(1.06); transform: translateY(-1px); }
+        button:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+        .btn-primary { background: linear-gradient(135deg, #2563eb, #3b82f6); }
+        .btn-secondary { background: linear-gradient(135deg, #059669, #10b981); }
+        .btn-ghost { background: rgba(148, 163, 184, 0.16); color: var(--text); }
+
+        .result-wrap {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            min-height: 0;
+            flex: 1;
+        }
+
+        .result-toolbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .pill {
+            font-size: 12px;
+            color: #bfdbfe;
+            border: 1px solid rgba(96, 165, 250, 0.24);
+            background: rgba(37, 99, 235, 0.12);
+            padding: 6px 10px;
+            border-radius: 999px;
+        }
+
+        .result-box {
+            flex: 1;
+            min-height: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .result-box textarea {
+            flex: 1;
+            min-height: 380px;
+            background: #020617;
+            color: #e2e8f0;
+            font-family: var(--mono);
+            white-space: pre;
+        }
+
+        .log {
+            margin-top: 12px;
+            height: 150px;
+            overflow: auto;
+            border-top: 1px solid rgba(148, 163, 184, 0.18);
+            padding-top: 12px;
+            color: var(--muted);
+            font-family: var(--mono);
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .log-line { margin: 0 0 4px; }
+
+        @media (max-width: 980px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="shell">
+        <div class="header">
+            <div class="brand">
+                <h1>US Stock MCP Universal Cell Tester</h1>
+                <p>Works in PyWebview and in Chrome through the local web server.</p>
+            </div>
+            <div id="connection-status" class="status">
+                <span class="status-dot"></span>
+                <span>Starting...</span>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="card">
+                <div class="section-title">Request</div>
+
+                <label for="tool-select">Tool</label>
+                <select id="tool-select">
+                    <option value="">Loading tools...</option>
+                </select>
+
+                <div id="tool-meta" class="meta">Loading tool metadata...</div>
+
+                <label for="symbol-input">Input JSON or Symbol</label>
+                <textarea id="symbol-input" spellcheck="false">{&#10;  "symbol": "NVDA"&#10;}</textarea>
+
+                <div class="actions">
+                    <button id="run-btn" class="btn-primary">Run Tool</button>
+                    <button id="bulk-btn" class="btn-secondary">Bulk Test</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="result-wrap">
+                    <div class="result-toolbar">
+                        <div class="section-title" style="margin: 0;">Response</div>
+                        <div class="pill">Latency: <span id="stat-latency">-- ms</span></div>
+                    </div>
+                    <div class="result-box">
+                        <textarea id="json-viewer" readonly>// No result yet...</textarea>
+                    </div>
+                    <button id="copy-json-btn" class="btn-ghost">Copy JSON</button>
+                    <div id="log-area" class="log">
+                        <div class="log-line">[SYSTEM] Ready.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const isHttpMode = window.location.protocol === 'http:' || window.location.protocol === 'https:';
+        const toolSelect = document.getElementById('tool-select');
+        const symbolInput = document.getElementById('symbol-input');
+        const resultViewer = document.getElementById('json-viewer');
+        const logArea = document.getElementById('log-area');
+        const connectionStatus = document.getElementById('connection-status');
+        const metaArea = document.getElementById('tool-meta');
+        const runBtn = document.getElementById('run-btn');
+        const bulkBtn = document.getElementById('bulk-btn');
+        let toolsLoading = false;
+
+        function setStatus(text, tone = 'good') {
+            const dotColor = tone === 'bad' ? 'var(--bad)' : tone === 'warn' ? 'var(--warn)' : 'var(--good)';
+            connectionStatus.innerHTML = `<span class="status-dot" style="background:${dotColor}; box-shadow: 0 0 0 6px rgba(52, 211, 153, 0.15);"></span><span>${text}</span>`;
+        }
+
+        function log(msg) {
+            const line = document.createElement('div');
+            line.className = 'log-line';
+            line.textContent = `[${new Date().toLocaleTimeString()}] ${msg}`;
+            logArea.appendChild(line);
+            logArea.scrollTop = logArea.scrollHeight;
+        }
+
+        function prettyJson(value) {
+            return typeof value === 'string' ? value : JSON.stringify(value, null, 2);
+        }
+
+        function parseInputText(text) {
+            const raw = (text || '').trim();
+            if (!raw) return {};
+
+            if (raw.startsWith('{') && raw.endsWith('}')) {
+                try {
+                    const parsed = JSON.parse(raw);
+                    if (parsed && typeof parsed === 'object') return parsed;
+                } catch (_) {
+                    // fall through to symbol behavior
+                }
+            }
+
+            return raw;
+        }
+
+        async function waitForBridge(timeoutMs = 8000) {
+            const start = Date.now();
+            while (Date.now() - start < timeoutMs) {
+                if (window.pywebview && window.pywebview.api) return true;
+                await new Promise(r => setTimeout(r, 50));
+            }
+            return false;
+        }
+
+        async function getTools() {
+            if (isHttpMode) {
+                const resp = await fetch('/api/tools');
+                const data = await resp.json();
+                return Array.isArray(data.tools) ? data.tools : [];
+            }
+
+            if (window.pywebview && window.pywebview.api && typeof window.pywebview.api.get_tool_list === 'function') {
+                const tools = await window.pywebview.api.get_tool_list();
+                return Array.isArray(tools) ? tools : JSON.parse(tools);
+            }
+
+            throw new Error('Bridge unavailable');
+        }
+
+        async function getMetadata(tool) {
+            if (isHttpMode) {
+                const resp = await fetch(`/api/metadata/${encodeURIComponent(tool)}`);
+                return await resp.json();
+            }
+
+            if (window.pywebview && window.pywebview.api && typeof window.pywebview.api.get_tool_metadata === 'function') {
+                const raw = await window.pywebview.api.get_tool_metadata(tool);
+                return typeof raw === 'string' ? JSON.parse(raw) : raw;
+            }
+
+            throw new Error('Metadata bridge unavailable');
+        }
+
+        async function callTool(tool, inputText) {
+            const payload = parseInputText(inputText);
+
+            if (isHttpMode) {
+                const resp = await fetch('/api/call', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        tool_name: tool,
+                        input: payload
+                    })
+                });
+                return await resp.json();
+            }
+
+            if (window.pywebview && window.pywebview.api && typeof window.pywebview.api.call_tool_poc === 'function') {
+                return await window.pywebview.api.call_tool_poc(tool, payload);
+            }
+
+            throw new Error('Call bridge unavailable');
+        }
+
+        function sampleToText(sample) {
+            if (!sample || typeof sample !== 'object') return '{\n  "symbol": "NVDA"\n}';
+            return JSON.stringify(sample, null, 2);
+        }
+
+        function suggestedValue(sample) {
+            if (!sample || typeof sample !== 'object') return 'NVDA';
+            return sample.symbol || sample.ticker || sample.query || sample.text || 'NVDA';
+        }
+
+        function setInputValue(value) {
+            symbolInput.value = value;
+        }
+
+        function setResultValue(value) {
+            resultViewer.value = value;
+        }
+
+        function setBusy(isBusy) {
+            runBtn.disabled = isBusy;
+            bulkBtn.disabled = isBusy;
+        }
+
+        async function syncToolMeta(tool) {
+            if (!tool) return;
+            try {
+                const meta = await getMetadata(tool);
+                const sample = meta.sample_input || {};
+                setInputValue(sampleToText(sample));
+                metaArea.textContent = meta.description || `Tool: ${tool}`;
+            } catch (err) {
+                metaArea.textContent = `Metadata load failed: ${err}`;
+                log(`Metadata error for ${tool}: ${err}`);
+            }
+        }
+
+        async function loadTools() {
+            if (toolsLoading) return;
+            toolsLoading = true;
+
+            try {
+                const tools = await getTools();
+                toolSelect.innerHTML = '';
+
+                if (!tools.length) {
+                    toolSelect.innerHTML = '<option value="">No tools found</option>';
+                    setStatus('No tools found', 'bad');
+                    return;
+                }
+
+                for (const tool of tools) {
+                    const opt = document.createElement('option');
+                    opt.value = tool;
+                    opt.textContent = tool.replace(/_/g, ' ').toUpperCase();
+                    toolSelect.appendChild(opt);
+                }
+
+                toolSelect.value = tools[0];
+                await syncToolMeta(tools[0]);
+                setStatus(isHttpMode ? 'Browser mode ready' : 'PyWebview mode ready');
+                log(`Detected ${tools.length} tools.`);
+            } catch (err) {
+                setStatus('Connection failed', 'bad');
+                log(`Failed to load tools: ${err}`);
+            } finally {
+                toolsLoading = false;
+            }
+        }
+
+        async function runTest(manageBusy = true) {
+            const tool = toolSelect.value;
+            if (!tool) {
+                alert('Select a tool first.');
+                return null;
+            }
+
+            const inputText = symbolInput.value;
+            if (manageBusy) setBusy(true);
+            setResultValue('// Fetching data...');
+            log(`Executing ${tool}...`);
+
+            const started = performance.now();
+            try {
+                const result = await callTool(tool, inputText);
+                const latency = Math.round(performance.now() - started);
+                document.getElementById('stat-latency').textContent = `${latency} ms`;
+                setResultValue(prettyJson(result));
+                log(`Finished ${tool} in ${latency} ms.`);
+                return result;
+            } catch (err) {
+                const latency = Math.round(performance.now() - started);
+                document.getElementById('stat-latency').textContent = `${latency} ms`;
+                const failure = { ok: false, error: String(err) };
+                setResultValue(JSON.stringify(failure, null, 2));
+                log(`Execution failed: ${err}`);
+                return failure;
+            } finally {
+                if (manageBusy) setBusy(false);
+            }
+        }
+
+        async function runBulkTest() {
+            const tools = Array.from(toolSelect.options)
+                .map(o => o.value)
+                .filter(Boolean);
+
+            if (!tools.length) {
+                alert('No tools available.');
+                return;
+            }
+
+            setBusy(true);
+            log(`=== Bulk test start: ${tools.length} tools ===`);
+            let okCount = 0;
+
+            try {
+                for (const tool of tools) {
+                    toolSelect.value = tool;
+                    await syncToolMeta(tool);
+                    const result = await runTest(false);
+                    if (result && result.ok) okCount += 1;
+                    await new Promise(r => setTimeout(r, 150));
+                }
+                log(`=== Bulk test complete: ${okCount}/${tools.length} success ===`);
+            } finally {
+                setBusy(false);
+            }
+        }
+
+        document.getElementById('copy-json-btn').addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText(resultViewer.value);
+                log('JSON copied to clipboard.');
+            } catch (err) {
+                alert(`Copy failed: ${err}`);
+            }
+        });
+
+        toolSelect.addEventListener('change', () => {
+            syncToolMeta(toolSelect.value);
+        });
+
+        runBtn.addEventListener('click', runTest);
+        bulkBtn.addEventListener('click', runBulkTest);
+
+        window.addEventListener('pywebviewready', () => {
+            if (!isHttpMode) loadTools();
+        });
+
+        if (isHttpMode) {
+            loadTools();
+        } else {
+            waitForBridge().then(ready => {
+                if (ready) loadTools();
+                else setStatus('Waiting for bridge', 'warn');
+            });
+        }
+    </script>
+</body>
+</html>

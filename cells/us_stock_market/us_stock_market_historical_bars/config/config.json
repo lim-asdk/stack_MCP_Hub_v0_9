@@ -1,0 +1,6 @@
+{
+    "endpoint_path": "/stocks/bars",
+    "default_feed": "iex",
+    "request_timeout_seconds": 30,
+    "default_limit": 1000
+}

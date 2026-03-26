@@ -1,0 +1,12 @@
+{
+    "message": {
+        "params": {
+            "symbols": "AAPL,MSFT",
+            "feed": "iex",
+            "include_raw": true
+        }
+    },
+    "lim_aplc": {
+        "tx_id": "TX_SAMPLE_US Stock_LATEST_TRADE"
+    }
+}

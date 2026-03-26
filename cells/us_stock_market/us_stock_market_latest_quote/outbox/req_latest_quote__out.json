@@ -1,0 +1,71 @@
+{
+  "message": {
+    "source": "US Stock_market_latest_quote",
+    "timestamp": "2026-03-10T16:58:19.679781+00:00",
+    "data": {
+      "normalized": [
+        {
+          "symbol": "NVDA",
+          "ask_price": 185.67,
+          "ask_size": 400,
+          "ask_exchange": "V",
+          "bid_price": 185.66,
+          "bid_size": 400,
+          "bid_exchange": "V",
+          "timestamp": "2026-03-10T16:58:18.870199829Z"
+        },
+        {
+          "symbol": "AMD",
+          "ask_price": 204.76,
+          "ask_size": 100,
+          "ask_exchange": "V",
+          "bid_price": 204.69,
+          "bid_size": 300,
+          "bid_exchange": "V",
+          "timestamp": "2026-03-10T16:58:18.874961004Z"
+        }
+      ],
+      "request_meta": {
+        "symbols": "NVDA,AMD",
+        "feed": "iex",
+        "queried_at": "2026-03-10T16:58:19.679781+00:00"
+      },
+      "raw": {
+        "quotes": {
+          "NVDA": {
+            "ap": 185.67,
+            "as": 400,
+            "ax": "V",
+            "bp": 185.66,
+            "bs": 400,
+            "bx": "V",
+            "c": [
+              "R"
+            ],
+            "t": "2026-03-10T16:58:18.870199829Z",
+            "z": "C"
+          },
+          "AMD": {
+            "ap": 204.76,
+            "as": 100,
+            "ax": "V",
+            "bp": 204.69,
+            "bs": 300,
+            "bx": "V",
+            "c": [
+              "R"
+            ],
+            "t": "2026-03-10T16:58:18.874961004Z",
+            "z": "C"
+          }
+        }
+      }
+    },
+    "error": null,
+    "details": null
+  },
+  "status": "OK",
+  "lim_aplc": {
+    "tx_id": "TX_SAMPLE_US Stock_LATEST_QUOTE"
+  }
+}

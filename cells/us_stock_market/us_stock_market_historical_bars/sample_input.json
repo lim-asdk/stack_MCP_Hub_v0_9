@@ -1,0 +1,17 @@
+{
+    "message": {
+        "params": {
+            "symbols": "NVDA",
+            "timeframe": "1Day",
+            "start": "2024-01-01T00:00:00Z",
+            "end": "2024-01-05T00:00:00Z",
+            "limit": 10,
+            "feed": "iex",
+            "adjustment": "all",
+            "include_raw": false
+        }
+    },
+    "lim_aplc": {
+        "tx_id": "TX_SAMPLE_US Stock_HIST_BARS"
+    }
+}

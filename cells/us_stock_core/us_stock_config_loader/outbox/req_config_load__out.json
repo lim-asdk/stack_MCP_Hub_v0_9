@@ -1,0 +1,18 @@
+{
+  "message": {
+    "source": "US Stock_config_loader",
+    "timestamp": "2026-03-10T14:27:46.191660+00:00",
+    "data": {
+      "status": "LOADED",
+      "endpoint": "https://paper-api.US Stock.markets/v2",
+      "data_endpoint": "https://data.US Stock.markets/v2",
+      "credentials_present": true,
+      "api_key_preview": "PK7K...596N"
+    },
+    "error": null
+  },
+  "status": "OK",
+  "lim_aplc": {
+    "tx_id": "TX_SAMPLE_US Stock_LOADER"
+  }
+}

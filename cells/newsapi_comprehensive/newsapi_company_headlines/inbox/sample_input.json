@@ -1,0 +1,10 @@
+{
+    "message": {
+        "params": {
+            "query": "Apple Inc"
+        }
+    },
+    "lim_aplc": {
+        "tx_id": "TX_NEWSAPI_HEADLINES"
+    }
+}

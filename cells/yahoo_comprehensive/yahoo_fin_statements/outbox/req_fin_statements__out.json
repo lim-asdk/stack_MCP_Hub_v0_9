@@ -1,0 +1,127 @@
+{
+  "message": {
+    "source": "orchestrator_trigger",
+    "timestamp": "2026-03-25T01:08:58.796800+00:00",
+    "data": {
+      "symbol": "NVDA",
+      "financials": [
+        {
+          "Date": "2026-01-31",
+          "Total Revenue": 215938000000.0,
+          "Operating Income": 130387000000.0,
+          "Net Income": 120067000000.0,
+          "Gross Profit": 153463000000.0,
+          "EBITDA": 144552000000.0
+        },
+        {
+          "Date": "2025-01-31",
+          "Total Revenue": 130497000000.0,
+          "Operating Income": 81453000000.0,
+          "Net Income": 72880000000.0,
+          "Gross Profit": 97858000000.0,
+          "EBITDA": 86137000000.0
+        },
+        {
+          "Date": "2024-01-31",
+          "Total Revenue": 60922000000.0,
+          "Operating Income": 32972000000.0,
+          "Net Income": 29760000000.0,
+          "Gross Profit": 44301000000.0,
+          "EBITDA": 35583000000.0
+        },
+        {
+          "Date": "2023-01-31",
+          "Total Revenue": 26974000000.0,
+          "Operating Income": 5577000000.0,
+          "Net Income": 4368000000.0,
+          "Gross Profit": 15356000000.0,
+          "EBITDA": 5986000000.0
+        }
+      ],
+      "institutional_holders": [
+        {
+          "Date Reported": "2025-12-31",
+          "Holder": "Vanguard Group Inc",
+          "pctHeld": 0.0933,
+          "Shares": 2266683275,
+          "Value": 397122902862,
+          "pctChange": 0.0194
+        },
+        {
+          "Date Reported": "2025-12-31",
+          "Holder": "Blackrock Inc.",
+          "pctHeld": 0.08,
+          "Shares": 1943812884,
+          "Value": 340556011344,
+          "pctChange": 0.0075
+        },
+        {
+          "Date Reported": "2025-12-31",
+          "Holder": "State Street Corporation",
+          "pctHeld": 0.040799998,
+          "Shares": 991480489,
+          "Value": 173707378647,
+          "pctChange": 0.0117
+        },
+        {
+          "Date Reported": "2025-12-31",
+          "Holder": "FMR, LLC",
+          "pctHeld": 0.04,
+          "Shares": 971063283,
+          "Value": 170130284218,
+          "pctChange": -0.0117999995
+        },
+        {
+          "Date Reported": "2025-12-31",
+          "Holder": "Geode Capital Management, LLC",
+          "pctHeld": 0.0242,
+          "Shares": 588803093,
+          "Value": 103158300096,
+          "pctChange": 0.0058
+        },
+        {
+          "Date Reported": "2025-12-31",
+          "Holder": "JPMORGAN CHASE & CO",
+          "pctHeld": 0.0188,
+          "Shares": 456141138,
+          "Value": 79915925985,
+          "pctChange": -0.5332
+        },
+        {
+          "Date Reported": "2025-12-31",
+          "Holder": "Price (T.Rowe) Associates Inc",
+          "pctHeld": 0.0154,
+          "Shares": 373187926,
+          "Value": 65382523496,
+          "pctChange": -0.056999996
+        },
+        {
+          "Date Reported": "2025-12-31",
+          "Holder": "NORGES BANK",
+          "pctHeld": 0.0137,
+          "Shares": 333748700,
+          "Value": 58472771221,
+          "pctChange": 0.026099999
+        },
+        {
+          "Date Reported": "2025-12-31",
+          "Holder": "Morgan Stanley",
+          "pctHeld": 0.013300001,
+          "Shares": 323733984,
+          "Value": 56718193008,
+          "pctChange": 0.0023999999
+        },
+        {
+          "Date Reported": "2025-12-31",
+          "Holder": "Northern Trust Corporation",
+          "pctHeld": 0.0104,
+          "Shares": 253789803,
+          "Value": 44463972711,
+          "pctChange": -0.0218
+        }
+      ]
+    },
+    "error": null
+  },
+  "status": "OK"
+}

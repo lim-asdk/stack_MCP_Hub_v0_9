@@ -1,0 +1,51 @@
+{
+  "name": "yahoo_company_profile",
+  "category": "comprehensive",
+  "description": "?åÏÇ¨ Í∞úÏöîÎ•?Í∞Ä?∏Ïò§???Ä (Î∂ÑÏïº, CEO, Î∞∞ÎãπÎ•???",
+  "version": "1.0",
+  "author": "Antigravity",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "symbol": {
+        "type": "string",
+        "description": "Ï£ºÏãù ?∞Ïª§ ?¨Î≥º (?? AAPL)"
+      }
+    },
+    "required": [
+      "symbol"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "symbol": {
+        "type": "string"
+      },
+      "company_name": {
+        "type": "string"
+      },
+      "sector": {
+        "type": "string"
+      },
+      "industry": {
+        "type": "string"
+      },
+      "ceo": {
+        "type": "string"
+      },
+      "website": {
+        "type": "string"
+      },
+      "dividend_yield": {
+        "type": "number"
+      },
+      "market_cap": {
+        "type": "number"
+      },
+      "summary": {
+        "type": "string"
+      }
+    }
+  }
+}

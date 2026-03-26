@@ -1,0 +1,51 @@
+{
+    "input_schema": {
+        "required": [
+            "symbols"
+        ],
+        "properties": {
+            "symbols": {
+                "type": "string",
+                "description": "Comma-separated list of symbols (e.g. AAPL,TSLA)"
+            },
+            "feed": {
+                "type": "string",
+                "description": "Data feed (iex, sip). Note: sip requires paid subscription for real-time.",
+                "enum": [
+                    "iex",
+                    "sip"
+                ],
+                "default": "iex"
+            },
+            "include_raw": {
+                "type": "boolean",
+                "default": false
+            }
+        }
+    },
+    "runtime_contract": {
+        "requires_US Stock_config": true,
+        "issues_token": false,
+        "makes_network_call": true,
+        "transport": "REST"
+    },
+    "outbox_contract": {
+        "top_level_keys": [
+            "message",
+            "status",
+            "lim_aplc"
+        ],
+        "data_shape": [
+            "normalized",
+            "raw",
+            "request_meta",
+            "US Stock_status"
+        ]
+    },
+    "source_files": {
+        "worker": "kernel_parts/worker.py",
+        "http_client": "kernel_parts/http_client.py",
+        "bridge": "bridge.py",
+        "selftest": "selftest.py"
+    }
+}

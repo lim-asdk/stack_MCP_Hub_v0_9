@@ -1,0 +1,25 @@
+{
+    "input_schema": {
+        "required": [],
+        "properties": {}
+    },
+    "runtime_contract": {
+        "reads_file": true,
+        "makes_network_call": false
+    },
+    "outbox_contract": {
+        "top_level_keys": [
+            "message",
+            "status",
+            "lim_aplc"
+        ],
+        "data_shape": [
+            "status"
+        ]
+    },
+    "source_files": {
+        "worker": "kernel_parts/worker.py",
+        "bridge": "bridge.py",
+        "selftest": "selftest.py"
+    }
+}

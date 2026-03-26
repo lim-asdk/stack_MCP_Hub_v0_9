@@ -1,0 +1,68 @@
+{
+    "cell_id": "US Stock_market_latest_quote",
+    "title": "US Stock Market Latest Quote",
+    "version": "v1.0",
+    "summary_1line": "Fetches the most recent best bid/ask quote for one or more US stocks via US Stock.",
+    "description": "Read-only Market Data cell. Retrieves the latest quote (bid price, bid size, ask price, ask size) for symbols like AAPL. Direct API key load. Does not support order placement.",
+    "purpose": "Provides real-time or delayed best bid/ask market quote data based on the US Stock Market Data v2 API.",
+    "tags": [
+        "US Stock",
+        "market",
+        "quote",
+        "bid",
+        "ask",
+        "us-stock",
+        "read-only"
+    ],
+    "inputs": {
+        "inbox": {
+            "required_fields": [
+                "message.params.symbols"
+            ],
+            "accepted_inputs": [
+                "message.params.symbols",
+                "message.params.feed"
+            ],
+            "optional_fields": [
+                "message.params.include_raw"
+            ],
+            "example_minimal": {
+                "message": {
+                    "params": {
+                        "symbols": "NVDA,AMD",
+                        "feed": "iex"
+                    }
+                }
+            }
+        }
+    },
+    "outputs": {
+        "outbox": {
+            "produces": [
+                "req_*__out.json"
+            ],
+            "status": "OK/FAIL"
+        }
+    },
+    "run": {
+        "entry": "python bridge.py",
+        "one_shot": true
+    },
+    "parameters": {
+        "stm_mapping": {
+            "priority_order": [
+                "message.params.symbols"
+            ],
+            "options_paths": [
+                "message.params",
+                "message.options",
+                "options"
+            ],
+            "pass_through_keys": [
+                "symbols",
+                "feed",
+                "include_raw"
+            ]
+        }
+    }
+}

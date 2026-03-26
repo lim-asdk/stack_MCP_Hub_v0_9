@@ -1,0 +1,46 @@
+{
+    "cell_id": "US Stock_config_loader",
+    "title": "US Stock Config Loader",
+    "version": "v1.0",
+    "summary_1line": "Loads US Stock API Key and Secret from config file securely without exposing to outbox.",
+    "description": "Infrastructure cell for ui_US Stock_stack_v1. Reads config_grace_apis.json, extracts the 'US Stock' block, and confirms presence of API Key/Secret. Does NOT output raw secrets.",
+    "purpose": "Provides a secure, common initialization point for all US Stock market data cells.",
+    "tags": [
+        "US Stock",
+        "core",
+        "config",
+        "infra"
+    ],
+    "inputs": {
+        "inbox": {
+            "required_fields": [],
+            "accepted_inputs": [
+                "message.options"
+            ],
+            "optional_fields": [],
+            "example_minimal": {}
+        }
+    },
+    "outputs": {
+        "outbox": {
+            "produces": [
+                "req_*__out.json"
+            ],
+            "status": "OK/FAIL"
+        }
+    },
+    "run": {
+        "entry": "python bridge.py",
+        "one_shot": true
+    },
+    "parameters": {
+        "stm_mapping": {
+            "priority_order": [],
+            "options_paths": [
+                "message.options",
+                "options"
+            ],
+            "pass_through_keys": []
+        }
+    }
+}

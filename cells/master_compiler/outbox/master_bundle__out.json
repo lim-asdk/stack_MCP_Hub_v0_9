@@ -1,0 +1,672 @@
+{
+  "symbol": "NVDA",
+  "timestamp": "2026-03-25T01:09:14.119232+00:00",
+  "ui_zones": {
+    "overview_core": {
+      "name": "NVIDIA Corporation",
+      "sector": "Technology",
+      "price": "175.30",
+      "change": "-0.17%",
+      "consensus": {
+        "rating": "HOLD",
+        "avgTarget": "-",
+        "highTarget": "-"
+      },
+      "profile": {
+        "price": "175.30",
+        "change": "-0.17%"
+      }
+    },
+    "price_action": {
+      "chart_data": [
+        {
+          "time": "2025-12-26T05:00:00Z",
+          "close": 190.42
+        },
+        {
+          "time": "2025-12-29T05:00:00Z",
+          "close": 188.22
+        },
+        {
+          "time": "2025-12-30T05:00:00Z",
+          "close": 187.5
+        },
+        {
+          "time": "2025-12-31T05:00:00Z",
+          "close": 186.51
+        },
+        {
+          "time": "2026-01-02T05:00:00Z",
+          "close": 188.81
+        },
+        {
+          "time": "2026-01-05T05:00:00Z",
+          "close": 188.12
+        },
+        {
+          "time": "2026-01-06T05:00:00Z",
+          "close": 187.24
+        },
+        {
+          "time": "2026-01-07T05:00:00Z",
+          "close": 189.16
+        },
+        {
+          "time": "2026-01-08T05:00:00Z",
+          "close": 185.08
+        },
+        {
+          "time": "2026-01-09T05:00:00Z",
+          "close": 184.81
+        },
+        {
+          "time": "2026-01-12T05:00:00Z",
+          "close": 184.87
+        },
+        {
+          "time": "2026-01-13T05:00:00Z",
+          "close": 185.78
+        },
+        {
+          "time": "2026-01-14T05:00:00Z",
+          "close": 183.29
+        },
+        {
+          "time": "2026-01-15T05:00:00Z",
+          "close": 187.14
+        },
+        {
+          "time": "2026-01-16T05:00:00Z",
+          "close": 186.11
+        },
+        {
+          "time": "2026-01-20T05:00:00Z",
+          "close": 178.14
+        },
+        {
+          "time": "2026-01-21T05:00:00Z",
+          "close": 183.29
+        },
+        {
+          "time": "2026-01-22T05:00:00Z",
+          "close": 184.83
+        },
+        {
+          "time": "2026-01-23T05:00:00Z",
+          "close": 187.63
+        },
+        {
+          "time": "2026-01-26T05:00:00Z",
+          "close": 186.4
+        },
+        {
+          "time": "2026-01-27T05:00:00Z",
+          "close": 188.55
+        },
+        {
+          "time": "2026-01-28T05:00:00Z",
+          "close": 191.51
+        },
+        {
+          "time": "2026-01-29T05:00:00Z",
+          "close": 192.48
+        },
+        {
+          "time": "2026-01-30T05:00:00Z",
+          "close": 191.12
+        },
+        {
+          "time": "2026-02-02T05:00:00Z",
+          "close": 185.65
+        },
+        {
+          "time": "2026-02-03T05:00:00Z",
+          "close": 180.27
+        },
+        {
+          "time": "2026-02-04T05:00:00Z",
+          "close": 174.19
+        },
+        {
+          "time": "2026-02-05T05:00:00Z",
+          "close": 171.81
+        },
+        {
+          "time": "2026-02-06T05:00:00Z",
+          "close": 185.2
+        },
+        {
+          "time": "2026-02-09T05:00:00Z",
+          "close": 189.91
+        },
+        {
+          "time": "2026-02-10T05:00:00Z",
+          "close": 188.41
+        },
+        {
+          "time": "2026-02-11T05:00:00Z",
+          "close": 189.97
+        },
+        {
+          "time": "2026-02-12T05:00:00Z",
+          "close": 186.89
+        },
+        {
+          "time": "2026-02-13T05:00:00Z",
+          "close": 182.77
+        },
+        {
+          "time": "2026-02-17T05:00:00Z",
+          "close": 185.1
+        },
+        {
+          "time": "2026-02-18T05:00:00Z",
+          "close": 187.88
+        },
+        {
+          "time": "2026-02-19T05:00:00Z",
+          "close": 187.87
+        },
+        {
+          "time": "2026-02-20T05:00:00Z",
+          "close": 189.75
+        },
+        {
+          "time": "2026-02-23T05:00:00Z",
+          "close": 191.57
+        },
+        {
+          "time": "2026-02-24T05:00:00Z",
+          "close": 192.85
+        },
+        {
+          "time": "2026-02-25T05:00:00Z",
+          "close": 195.82
+        },
+        {
+          "time": "2026-02-26T05:00:00Z",
+          "close": 184.85
+        },
+        {
+          "time": "2026-02-27T05:00:00Z",
+          "close": 177.2
+        },
+        {
+          "time": "2026-03-02T05:00:00Z",
+          "close": 182.39
+        },
+        {
+          "time": "2026-03-03T05:00:00Z",
+          "close": 180.02
+        },
+        {
+          "time": "2026-03-04T05:00:00Z",
+          "close": 182.96
+        },
+        {
+          "time": "2026-03-05T05:00:00Z",
+          "close": 183.3
+        },
+        {
+          "time": "2026-03-06T05:00:00Z",
+          "close": 177.69
+        },
+        {
+          "time": "2026-03-09T04:00:00Z",
+          "close": 182.64
+        },
+        {
+          "time": "2026-03-10T04:00:00Z",
+          "close": 184.76
+        },
+        {
+          "time": "2026-03-11T04:00:00Z",
+          "close": 186.01
+        },
+        {
+          "time": "2026-03-12T04:00:00Z",
+          "close": 183.11
+        },
+        {
+          "time": "2026-03-13T04:00:00Z",
+          "close": 180.21
+        },
+        {
+          "time": "2026-03-16T04:00:00Z",
+          "close": 183.17
+        },
+        {
+          "time": "2026-03-17T04:00:00Z",
+          "close": 181.96
+        },
+        {
+          "time": "2026-03-18T04:00:00Z",
+          "close": 180.375
+        },
+        {
+          "time": "2026-03-19T04:00:00Z",
+          "close": 178.505
+        },
+        {
+          "time": "2026-03-20T04:00:00Z",
+          "close": 172.905
+        },
+        {
+          "time": "2026-03-23T04:00:00Z",
+          "close": 175.605
+        },
+        {
+          "time": "2026-03-24T04:00:00Z",
+          "close": 175.3
+        }
+      ]
+    },
+    "fundamentals": {
+      "income_statement": [
+        {
+          "Date": "2026-01-31",
+          "Total Revenue": 215938000000.0,
+          "Operating Income": 130387000000.0,
+          "Net Income": 120067000000.0,
+          "Gross Profit": 153463000000.0,
+          "EBITDA": 144552000000.0,
+          "Total Revenue_fmt": "$215.94B",
+          "Net Income_fmt": "$120.07B",
+          "Gross Profit_fmt": "$153.46B",
+          "Operating Income_fmt": "$130.39B"
+        },
+        {
+          "Date": "2025-01-31",
+          "Total Revenue": 130497000000.0,
+          "Operating Income": 81453000000.0,
+          "Net Income": 72880000000.0,
+          "Gross Profit": 97858000000.0,
+          "EBITDA": 86137000000.0,
+          "Total Revenue_fmt": "$130.50B",
+          "Net Income_fmt": "$72.88B",
+          "Gross Profit_fmt": "$97.86B",
+          "Operating Income_fmt": "$81.45B"
+        },
+        {
+          "Date": "2024-01-31",
+          "Total Revenue": 60922000000.0,
+          "Operating Income": 32972000000.0,
+          "Net Income": 29760000000.0,
+          "Gross Profit": 44301000000.0,
+          "EBITDA": 35583000000.0,
+          "Total Revenue_fmt": "$60.92B",
+          "Net Income_fmt": "$29.76B",
+          "Gross Profit_fmt": "$44.30B",
+          "Operating Income_fmt": "$32.97B"
+        },
+        {
+          "Date": "2023-01-31",
+          "Total Revenue": 26974000000.0,
+          "Operating Income": 5577000000.0,
+          "Net Income": 4368000000.0,
+          "Gross Profit": 15356000000.0,
+          "EBITDA": 5986000000.0,
+          "Total Revenue_fmt": "$26.97B",
+          "Net Income_fmt": "$4.37B",
+          "Gross Profit_fmt": "$15.36B",
+          "Operating Income_fmt": "$5.58B"
+        }
+      ],
+      "mktCap": "$4.26T",
+      "pe": "15.76",
+      "pb": "27.07",
+      "roe": "101.5%",
+      "divYield": "2.0%",
+      "peg": "-",
+      "metrics": {
+        "grossMargin": "44.1%",
+        "operatingMargin": "29.8%",
+        "netMargin": "25.3%",
+        "fcfYield": "3.8%",
+        "debtToEquity": "1.45",
+        "currentRatio": "0.99"
+      }
+    },
+    "news_sentiment": {
+      "latest_news": [
+        {
+          "source": "Yahoo",
+          "time": "2026-03-25 08:32",
+          "headline": "Will Microsoft Ultimately Be an AI Beneficiary or Be Hurt by It?",
+          "url": "https://finnhub.io/api/news?id=3f1b041b8b6bd3ddbdd88e2f02f47f39007396e9e588ba9be91cb9a533b24911"
+        },
+        {
+          "source": "Yahoo",
+          "time": "2026-03-25 08:26",
+          "headline": "Is Rivian's $1.25 Billion Robotaxi Deal With Uber Really a Good One for Shareholders?",
+          "url": "https://finnhub.io/api/news?id=d375f5abe203c306bb43ecf781c2464fa6277321c7bfbad8b26a3522ccf7d278"
+        },
+        {
+          "source": "Yahoo",
+          "time": "2026-03-25 08:03",
+          "headline": "Super Micro Faces Risk After Smuggling Case",
+          "url": "https://finnhub.io/api/news?id=a56bdf13a615c6c47029a5a126fca95ba3624ba03b74fd660fd851fb54e882f9"
+        },
+        {
+          "source": "Yahoo",
+          "time": "2026-03-25 08:03",
+          "headline": "Nvidia Rises Despite Export Pressure",
+          "url": "https://finnhub.io/api/news?id=741ca1acead5fc1bbd40852305a1ff9c056aa2821ff283d0fccb26c0e538adb8"
+        },
+        {
+          "source": "Yahoo",
+          "time": "2026-03-25 07:57",
+          "headline": "Better Crypto Buy: Bitcoin or a Bitcoin ETF?",
+          "url": "https://finnhub.io/api/news?id=33f8ad25b20c8a1f63973ff62f21553c38c746cc014eac7c0cabd714b05237b6"
+        },
+        {
+          "source": "Yahoo",
+          "time": "2026-03-25 07:35",
+          "headline": "Better AI Buy: Nvidia vs Micron",
+          "url": "https://finnhub.io/api/news?id=1120feb7586dcd5f529a90c7c55ac626e3d6d44654eefe03a463580bedee53ab"
+        },
+        {
+          "source": "Yahoo",
+          "time": "2026-03-25 07:26",
+          "headline": "Arm to Sell Its Own Chips, Eyeing Sales Goal of $15 Billion",
+          "url": "https://finnhub.io/api/news?id=892224e3b111d40603dc62abef8007e91b0b831140d1728c05a5973941b9f371"
+        },
+        {
+          "source": "Yahoo",
+          "time": "2026-03-25 07:25",
+          "headline": "SoFi: The Short Thesis",
+          "url": "https://finnhub.io/api/news?id=4b0bd697b9bbfd47f5ef12b4ef8e83259b3be204115aaefab8d08c767342e9c2"
+        },
+        {
+          "source": "Yahoo",
+          "time": "2026-03-25 07:21",
+          "headline": "This Under-the-Radar AI Stock Could Be a Better Buy Than Nvidia",
+          "url": "https://finnhub.io/api/news?id=59833d3b0cb2081ff90edb84bcf21674c4728d880c3192cce939966712c9bb11"
+        },
+        {
+          "source": "Yahoo",
+          "time": "2026-03-25 07:08",
+          "headline": "Here's Why Nvidia's Stock Looks ?˜Relatively Cheap' According to These Experts",
+          "url": "https://finnhub.io/api/news?id=01798dfd656168d21955f8d3647f9db4cf3db0e55aef616e37057c4a793361ae"
+        }
+      ],
+      "sentiment": {
+        "score": 78,
+        "label": "BULLISH BIAS",
+        "positive": 45,
+        "negative": 12,
+        "neutral": 33
+      }
+    },
+    "smart_money": {
+      "insider_activity": [
+        {
+          "name": "ROBERTSON DONALD F JR",
+          "position": "Officer",
+          "shares": 5396,
+          "value": 942944
+        },
+        {
+          "name": "KRESS COLETTE M.",
+          "position": "Chief Financial Officer",
+          "shares": 62650,
+          "value": 10956706
+        },
+        {
+          "name": "SHAH AARTI S",
+          "position": "Director",
+          "shares": 19000,
+          "value": 3357549
+        },
+        {
+          "name": "HUANG JEN-HSUN",
+          "position": "Chief Executive Officer",
+          "shares": 58962602,
+          "value": 0
+        },
+        {
+          "name": "PURI AJAY K",
+          "position": "Officer",
+          "shares": 300000,
+          "value": 54676140
+        }
+      ],
+      "institutional_holders": [
+        "Vanguard Group Inc (0.0%)",
+        "Blackrock Inc. (0.0%)",
+        "State Street Corporation (0.0%)",
+        "FMR, LLC (0.0%)",
+        "Geode Capital Management, LLC (0.0%)",
+        "JPMORGAN CHASE & CO (0.0%)",
+        "Price (T.Rowe) Associates Inc (0.0%)",
+        "NORGES BANK (0.0%)"
+      ]
+    },
+    "peer_comparison": [
+      "NVDA",
+      "AVGO",
+      "MU",
+      "AMD",
+      "INTC"
+    ],
+    "market_ranks": {
+      "gainers": [
+        {
+          "symbol": "FOUR",
+          "name": "Shift4 Payments, Inc.",
+          "price": "52.50 +8.47 (+19.24%)",
+          "change": "8.47",
+          "percent_change": "8.47"
+        },
+        {
+          "symbol": "AAOI",
+          "name": "Applied Optoelectronics, Inc.",
+          "price": "113.90 +18.14 (+18.94%)",
+          "change": "18.14",
+          "percent_change": "18.14"
+        },
+        {
+          "symbol": "HCC",
+          "name": "Warrior Met Coal, Inc.",
+          "price": "95.58 +9.09 (+10.51%)",
+          "change": "9.09",
+          "percent_change": "9.09"
+        },
+        {
+          "symbol": "CC",
+          "name": "The Chemours Company",
+          "price": "20.37 +1.87 (+10.11%)",
+          "change": "1.87",
+          "percent_change": "1.87"
+        },
+        {
+          "symbol": "ACLS",
+          "name": "Axcelis Technologies, Inc.",
+          "price": "94.39 +8.62 (+10.05%)",
+          "change": "8.62",
+          "percent_change": "8.62"
+        },
+        {
+          "symbol": "LITE",
+          "name": "Lumentum Holdings Inc.",
+          "price": "801.99 +73.04 (+10.02%)",
+          "change": "73.04",
+          "percent_change": "73.04"
+        },
+        {
+          "symbol": "FN",
+          "name": "Fabrinet",
+          "price": "600.91 +54.44 (+9.96%)",
+          "change": "54.44",
+          "percent_change": "54.44"
+        },
+        {
+          "symbol": "CAR",
+          "name": "Avis Budget Group, Inc.",
+          "price": "117.49 +10.21 (+9.52%)",
+          "change": "10.21",
+          "percent_change": "10.21"
+        },
+        {
+          "symbol": "WRD",
+          "name": "WeRide Inc.",
+          "price": "7.56 +0.64 (+9.25%)",
+          "change": "0.64",
+          "percent_change": "0.64"
+        },
+        {
+          "symbol": "OLN",
+          "name": "Olin Corporation",
+          "price": "27.59 +2.33 (+9.22%)",
+          "change": "2.33",
+          "percent_change": "2.33"
+        }
+      ],
+      "losers": [
+        {
+          "symbol": "IBRX",
+          "name": "ImmunityBio, Inc.",
+          "price": "7.41 -1.99 (-21.12%)",
+          "change": "-1.99",
+          "percent_change": "-1.99"
+        },
+        {
+          "symbol": "CRCL",
+          "name": "Circle Internet Group",
+          "price": "101.19 -25.45 (-20.09%)",
+          "change": "-25.45",
+          "percent_change": "-25.45"
+        },
+        {
+          "symbol": "ADMA",
+          "name": "ADMA Biologics, Inc.",
+          "price": "11.33 -2.26 (-16.63%)",
+          "change": "-2.26",
+          "percent_change": "-2.26"
+        },
+        {
+          "symbol": "HSAI",
+          "name": "Hesai Group",
+          "price": "20.24 -3.34 (-14.16%)",
+          "change": "-3.34",
+          "percent_change": "-3.34"
+        },
+        {
+          "symbol": "ALM",
+          "name": "Almonty Industries Inc.",
+          "price": "14.73 -2.20 (-13.02%)",
+          "change": "-2.2",
+          "percent_change": "-2.2"
+        },
+        {
+          "symbol": "LUNR",
+          "name": "Intuitive Machines, Inc.",
+          "price": "17.92 -2.39 (-11.77%)",
+          "change": "-2.39",
+          "percent_change": "-2.39"
+        },
+        {
+          "symbol": "AXON",
+          "name": "Axon Enterprise, Inc.",
+          "price": "456.60 -50.68 (-9.99%)",
+          "change": "-50.68",
+          "percent_change": "-50.68"
+        },
+        {
+          "symbol": "EL",
+          "name": "The EstÃ©e Lauder Companies Inc.",
+          "price": "71.48 -7.81 (-9.85%)",
+          "change": "-7.81",
+          "percent_change": "-7.81"
+        },
+        {
+          "symbol": "COIN",
+          "name": "Coinbase Global, Inc.",
+          "price": "181.04 -19.58 (-9.76%)",
+          "change": "-19.58",
+          "percent_change": "-19.58"
+        },
+        {
+          "symbol": "S",
+          "name": "SentinelOne, Inc.",
+          "price": "13.04 -1.34 (-9.32%)",
+          "change": "-1.34",
+          "percent_change": "-1.34"
+        }
+      ],
+      "most_active": [
+        {
+          "symbol": "NVDA",
+          "name": "NVIDIA Corporation",
+          "price": "175.23 -0.45 (-0.26%)",
+          "change": "-0.45",
+          "percent_change": "-0.45"
+        },
+        {
+          "symbol": "ONDS",
+          "name": "Ondas Inc.",
+          "price": "10.68 -0.22 (-2.02%)",
+          "change": "-0.22",
+          "percent_change": "-0.22"
+        },
+        {
+          "symbol": "IBRX",
+          "name": "ImmunityBio, Inc.",
+          "price": "7.41 -1.99 (-21.12%)",
+          "change": "-1.99",
+          "percent_change": "-1.99"
+        },
+        {
+          "symbol": "INTC",
+          "name": "Intel Corporation",
+          "price": "44.06 +0.05 (+0.11%)",
+          "change": "0.05",
+          "percent_change": "0.05"
+        },
+        {
+          "symbol": "GRAB",
+          "name": "Grab Holdings Limited",
+          "price": "3.79 +0.15 (+4.12%)",
+          "change": "0.15",
+          "percent_change": "0.15"
+        },
+        {
+          "symbol": "SMCI",
+          "name": "Super Micro Computer, Inc.",
+          "price": "22.23 +0.64 (+2.96%)",
+          "change": "0.64",
+          "percent_change": "0.64"
+        },
+        {
+          "symbol": "PLUG",
+          "name": "Plug Power Inc.",
+          "price": "2.29 -0.02 (-0.87%)",
+          "change": "-0.02",
+          "percent_change": "-0.02"
+        },
+        {
+          "symbol": "TSLA",
+          "name": "Tesla, Inc.",
+          "price": "382.91 +2.06 (+0.54%)",
+          "change": "2.06",
+          "percent_change": "2.06"
+        },
+        {
+          "symbol": "DNN",
+          "name": "Denison Mines Corp.",
+          "price": "3.51 +0.08 (+2.33%)",
+          "change": "0.08",
+          "percent_change": "0.08"
+        },
+        {
+          "symbol": "SOFI",
+          "name": "SoFi Technologies, Inc.",
+          "price": "16.70 -0.45 (-2.62%)",
+          "change": "-0.45",
+          "percent_change": "-0.45"
+        }
+      ],
+      "queried_at": "2026-03-25T01:09:13.953916+00:00"
+    }
+  }
+}

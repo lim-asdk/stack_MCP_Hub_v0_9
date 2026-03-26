@@ -1,0 +1,10 @@
+{
+    "message": {
+        "params": {
+            "symbol": "NVDA"
+        }
+    },
+    "lim_aplc": {
+        "tx_id": "TX_SAMPLE_FIN_STATEMENTS"
+    }
+}

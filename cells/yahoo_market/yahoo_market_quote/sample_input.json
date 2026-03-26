@@ -1,0 +1,8 @@
+{
+    "request_id": "test_yahoo_quote_001",
+    "message": {
+        "params": {
+            "symbols": "AAPL,MSFT"
+        }
+    }
+}

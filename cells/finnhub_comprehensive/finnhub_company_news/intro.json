@@ -1,0 +1,30 @@
+{
+  "name": "finnhub_company_news",
+  "category": "comprehensive",
+  "description": "최근 30??간의 기업 관???�스 �??�드?�인 (Finnhub)",
+  "version": "1.0",
+  "author": "Antigravity",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "symbol": {
+        "type": "string",
+        "description": "주식 ?�커 ?�볼 (?? AAPL)"
+      }
+    },
+    "required": [
+      "symbol"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "symbol": {
+        "type": "string"
+      },
+      "news": {
+        "type": "array"
+      }
+    }
+  }
+}

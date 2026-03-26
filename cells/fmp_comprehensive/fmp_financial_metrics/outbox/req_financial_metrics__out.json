@@ -1,0 +1,9 @@
+{
+  "message": {
+    "source": "orchestrator_trigger",
+    "timestamp": "2026-03-25T01:08:55.274397+00:00",
+    "data": {},
+    "error": "HTTP Error 403: Forbidden"
+  },
+  "status": "FAIL"
+}

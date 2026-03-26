@@ -1,0 +1,30 @@
+{
+  "name": "fmp_institutional_holders",
+  "category": "comprehensive",
+  "description": "Vanguard, BlackRock ?????°ì–´ ê¸°ê????˜ê¸‰/ë³´ìœ  ì§€ë¶??„í™© (FMP)",
+  "version": "1.0",
+  "author": "Antigravity",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "symbol": {
+        "type": "string",
+        "description": "?€???°ì»¤ (?? AAPL)"
+      }
+    },
+    "required": [
+      "symbol"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "symbol": {
+        "type": "string"
+      },
+      "institutionalHolders": {
+        "type": "array"
+      }
+    }
+  }
+}

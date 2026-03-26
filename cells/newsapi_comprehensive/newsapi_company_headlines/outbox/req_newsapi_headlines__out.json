@@ -1,0 +1,277 @@
+{
+  "message": {
+    "source": "newsapi_company_headlines",
+    "timestamp": "2026-03-10T23:11:21.072341+00:00",
+    "data": {
+      "query": "Apple Inc",
+      "articles": [
+        {
+          "source": {
+            "id": null,
+            "name": "Apple Newsroom"
+          },
+          "author": "John Gruber",
+          "title": "Studio Display vs. Studio Display XDR",
+          "description": "Choose your monitor. Studio Display is great for creators and everyday users. Studio Display XDR is perfect for pros.",
+          "url": "https://www.apple.com/displays/",
+          "urlToImage": "https://www.apple.com/v/displays/b/images/meta/displays__eleu6t3ns7qu_og.png?202603021208",
+          "publishedAt": "2026-03-04T18:04:43Z",
+          "content": "To access and use all Apple¬†Card features and products available only to Apple¬†Card users, you must add Apple¬†Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iP??[+875 chars]"
+        },
+        {
+          "source": {
+            "id": null,
+            "name": "Github.com"
+          },
+          "author": "fastino-ai",
+          "title": "GLiNER2: Unified Schema-Based Information Extraction",
+          "description": "Unified Schema-Based Information Extraction. Contribute to fastino-ai/GLiNER2 development by creating an account on GitHub.",
+          "url": "https://github.com/fastino-ai/GLiNER2",
+          "urlToImage": "https://opengraph.githubassets.com/4297868c865c646b27ad8b65e67ee7c81215fe95d56a7e64050688558619dcb0/fastino-ai/GLiNER2",
+          "publishedAt": "2026-03-05T20:18:37Z",
+          "content": "Extract entities, classify text, parse structured data, and extract relationsall in one efficient model.\r\nGLiNER2 unifies Named Entity Recognition, Text Classification, Structured Data Extraction, an??[+28764 chars]"
+        },
+        {
+          "source": {
+            "id": null,
+            "name": "Ketk.com"
+          },
+          "author": "Daisy Escatel",
+          "title": "Undercover operation leads to arrest of man plotting to prostitute minor in Smith County",
+          "description": "TYLER, Texas (KETK) ??A man was arrested in Smith County following a sting where he allegedly made plans for a prostitution operation involving someone he...",
+          "url": "https://www.ketk.com/news/crime-public-safety/undercover-operation-leads-to-arrest-of-man-plotting-to-prostitute-minor-in-smith-county/",
+          "urlToImage": "https://s.yimg.com/os/en/ketk_tyler_articles_859/ea0edda44cb92a053f26a3e85ef68ff1",
+          "publishedAt": "2026-03-04T21:51:14Z",
+          "content": "TYLER, Texas (KETK) A man was arrested in Smith County following a sting where he allegedly made plans for a prostitution operation involving someone he believed was a 15-year-old.\r\nThe operation beg??[+1709 chars]"
+        },
+        {
+          "source": {
+            "id": "business-insider",
+            "name": "Business Insider"
+          },
+          "author": "Lauren Edmonds,Lakshmi Varanasi",
+          "title": "The fallout over OpenAI's Pentagon deal is growing",
+          "description": "Since OpenAI agreed to share its technology with the Pentagon last week, the company has faced a torrent of bad news.",
+          "url": "https://www.businessinsider.com/openai-pentagon-deal-fallout-backlash-anthropic-altman-amodei-trump-2026-3",
+          "urlToImage": "https://i.insider.com/69acb804d3e2f1aef36a3197?width=1200&format=jpeg",
+          "publishedAt": "2026-03-08T05:01:01Z",
+          "content": "OpenAI CEO Sam Altman announced a deal with the Pentagon in February.Florian Gaertner/Photothek via Getty Images\r\n<ul><li>OpenAI agreed to a deal with the Pentagon in February.</li><li>Staffers have ??[+6316 chars]"
+        },
+        {
+          "source": {
+            "id": null,
+            "name": "Boredpanda.com"
+          },
+          "author": "Asli Akalin",
+          "title": "29 Laughable His-And-Hers Fashions From The 1970s",
+          "description": "The 1970s saw the founding of Apple Computer, Inc., the resignation of President Nixon, and... a lot of his-and-hers matching outfits that would get ridiculed to shreds in the street today. There are only so many belted tank tops and leopard onesies a person ??,
+          "url": "https://www.boredpanda.com/matching-his-and-her-fashion-1970-msn/",
+          "urlToImage": "https://static.boredpanda.com/blog/wp-content/uploads/2019/02/matching-his-and-her-fashion-1970-fb20.png",
+          "publishedAt": "2026-03-09T09:02:02Z",
+          "content": "The 1970s saw the founding of Apple Computer, Inc., the resignation of President Nixon, and... a lot of his-and-hers matching outfits that would get ridiculed to shreds in the street today. There are??[+243 chars]"
+        },
+        {
+          "source": {
+            "id": null,
+            "name": "Github.com"
+          },
+          "author": "robertcprice",
+          "title": "A CPU that runs entirely on GPU",
+          "description": "nCPU: model-native and tensor-optimized CPU research runtimes with organized workloads, tools, and docs - robertcprice/nCPU",
+          "url": "https://github.com/robertcprice/nCPU",
+          "urlToImage": "https://opengraph.githubassets.com/d607acf24232fcb8c1366f46f99bbe01d364e5788139cf8a10e0fe6f8f9c8edf/robertcprice/nCPU",
+          "publishedAt": "2026-03-04T04:30:32Z",
+          "content": "A CPU that runs entirely on GPU registers, memory, flags, and program counter are all tensors.Every ALU operation is a trained neural network.Addition uses Kogge-Stone carry-lookahead. Multiplication??[+10690 chars]"
+        },
+        {
+          "source": {
+            "id": "cbs-news",
+            "name": "CBS News"
+          },
+          "author": "CBS News",
+          "title": "Apple: The first 50 years",
+          "description": "In 1971, the origin story of Apple began with the friendship of engineering prodigy Steve Wozniak and computer enthusiast Steve Jobs. The machine they built and sold five years later would lead to what became the first trillion-dollar company. David Pogue, au??,
+          "url": "https://www.cbsnews.com/video/apple-the-first-50-years/",
+          "urlToImage": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/03/08/59ef92be-7d82-4a12-9fb0-46956f65b9cd/thumbnail/1200x630/60a4fe410edcea38c97373ba0c0da2db/apple-turns-50-1920.jpg",
+          "publishedAt": "2026-03-08T13:16:00Z",
+          "content": "Copyright ¬©2026 CBS Interactive Inc. All rights reserved."
+        },
+        {
+          "source": {
+            "id": "cbs-news",
+            "name": "CBS News"
+          },
+          "author": "CBS News",
+          "title": "The evolution of Apple over 50 years",
+          "description": "David Pogue, an author and correspondent for \"CBS Sunday Morning,\" talks about covering the rise of Apple over his career as the company is set to turn 50 next month, and his new book, \"Apple: The First 50 Years.\"",
+          "url": "https://www.cbsnews.com/video/the-evolution-of-apple-over-50-years/",
+          "urlToImage": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/03/09/3e9d0c2f-44d4-43f6-9ce3-4de34270e65b/thumbnail/1200x630/ee5bcdc1009bfc23fec505e5a7cd6285/cbsn-fusion-the-evolution-of-apple-over-50-years-thumbnail.jpg",
+          "publishedAt": "2026-03-09T14:31:00Z",
+          "content": "Copyright ¬©2026 CBS Interactive Inc. All rights reserved."
+        },
+        {
+          "source": {
+            "id": "cbs-news",
+            "name": "CBS News"
+          },
+          "author": "CBS News",
+          "title": "Extended interview: Tim Cook",
+          "description": "In this web exclusive, Tim Cook, the CEO of Apple, talks with \"Sunday Morning\" correspondent David Pogue (author of \"Apple: The First 50 Years\") to discuss the company's first half-century and its constant focus on \"the next thing.\" He also talks about the vi??,
+          "url": "https://www.cbsnews.com/video/extended-interview-tim-cook/",
+          "urlToImage": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/03/08/6bc86e85-0b7b-4a2e-9e1a-68eaf966e046/thumbnail/1200x630/5c619cccb5a8914c2e87522b515f7b08/extended-tim-cook-1920.jpg",
+          "publishedAt": "2026-03-08T13:18:00Z",
+          "content": "Copyright ¬©2026 CBS Interactive Inc. All rights reserved."
+        },
+        {
+          "source": {
+            "id": "cbs-news",
+            "name": "CBS News"
+          },
+          "author": "CBS News",
+          "title": "3/8: Sunday Morning",
+          "description": "Hosted by Lee Cowan. Featured: The first 50 years of Apple; Viola Davis and co-writer James Patterson; \"NCIS\"; the persistence of hunger in America; former Goldman Sachs CEO Lloyd Blankfein; and the art of picture frames.",
+          "url": "https://www.cbsnews.com/video/030826-cbs-sunday-morning/",
+          "urlToImage": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/03/08/a36ccf0d-70c8-4420-a4a5-f193af707c72/thumbnail/1200x630/2249f08b1480e44c646b1f59e546d120/sm-lee-cowan-030826-4427951-640x360.jpg",
+          "publishedAt": "2026-03-08T16:17:59Z",
+          "content": "Copyright ¬©2026 CBS Interactive Inc. All rights reserved."
+        },
+        {
+          "source": {
+            "id": null,
+            "name": "Boston Herald"
+          },
+          "author": "Bloomberg News",
+          "title": "A is for affordable: Apple launches $599 MacBook Neo",
+          "description": "Apple Inc. rolled out the $599 MacBook Neo in its biggest push yet into low-end laptops, aiming to challenge Windows PCs and Chromebooks for budget-minded shoppers.",
+          "url": "https://www.bostonherald.com/2026/03/04/a-is-for-affordable-apple-launches-599-macbook-neo/",
+          "urlToImage": "https://www.bostonherald.com/wp-content/uploads/2026/03/GettyImages-2264177090.jpg?w=1024&h=683",
+          "publishedAt": "2026-03-04T20:53:55Z",
+          "content": "Apple Inc. rolled out the $599 MacBook Neo in its biggest push yet into low-end laptops, aiming to challenge Windows PCs and Chromebooks for budget-minded shoppers.\r\nThe machine is $400 less than any??[+3423 chars]"
+        },
+        {
+          "source": {
+            "id": null,
+            "name": "Yahoo Entertainment"
+          },
+          "author": "Badar Shaikh",
+          "title": "William Shatner Previews X Money Features As Elon Musk's Super App Vision Accelerates",
+          "description": "Actor William Shatner has shared updates on the X Money payments service's beta rollout as Elon Musk's \"everything app\" goal takes shape. Shatner had...",
+          "url": "https://finance.yahoo.com/news/william-shatner-previews-x-money-203109026.html",
+          "urlToImage": "https://s.yimg.com/os/en/Benzinga/13a1eed2afef939a090ab4529aded5bd",
+          "publishedAt": "2026-03-05T20:31:09Z",
+          "content": "Actor William Shatner has shared updates on the X Money payments service's beta rollout as Elon Musk's \"everything app\" goal takes shape. Shatner had previously announced his involvement with the pro??[+3329 chars]"
+        },
+        {
+          "source": {
+            "id": "cbs-news",
+            "name": "CBS News"
+          },
+          "author": null,
+          "title": "Book excerpt: \"Apple: The First 50 Years\" by David Pogue",
+          "description": "The \"CBS Sunday Morning\" correspondent's latest book examines how, in its first half-century, the company founded by Steve Wozniak and Steve Jobs remade the culture ??and then, incredibly, remade itself.",
+          "url": "https://www.cbsnews.com/news/book-excerpt-apple-the-first-50-years-by-david-pogue/",
+          "urlToImage": "https://assets3.cbsnewsstatic.com/hub/i/r/2026/03/08/d6abc3aa-df68-4d2e-a106-f6d96cc2aefd/thumbnail/1200x630/46482b4eb35d5c04fd017826573f86fa/apple-cover-simon-and-schuster-1280.jpg",
+          "publishedAt": "2026-03-08T04:39:32Z",
+          "content": "Simon &amp; Schuster\r\nWe may receive an affiliate commission from anything you buy from this article.\r\n\"CBS Sunday Morning\" correspondent David Pogue's new book, \"Apple: The First 50 Years\" (to be pu??[+6745 chars]"
+        },
+        {
+          "source": {
+            "id": null,
+            "name": "Applech2.com"
+          },
+          "author": "applech2",
+          "title": "Belkin?ÅQi2 25W??Ç§?§„É¨?πÂÖÖ?ªÂô®?´Âä†?à„ÄÅBYOP?π„Éû?º„Éà?¶„Ç©?É„ÉÅ?õ„É´?Ä?º„ÅßApple Watch?†„Åë?ß„Å™?èGalaxy Watch?ÑPixel Watch?´„ÇÇÂØæÂøú?ô„Çã3-in-1??Ç§?§„É¨?πÂÖÖ?ªÂô®?åUltraCharge 25W ?¢„Ç∏?•„Éº?´Âºè?ÖÈõª?â„ÉÉ??Äç„Çí?∫Â£≤??,
+          "description": "Belkin?åiPhone?®Apple Watch?†„Åë?ß„Å™?èSamsung Galaxy?®Galaxy Swatch?ÑGoogle Pixel?®Pixel Watch?´„ÇÇÂØæÂøú?ô„Çã3-in-1?ÆQi2ÂØæÂøú??Ç§?§„É¨?πÂÖÖ?ªÂô® [??\nThe post Belkin?ÅQi2 25W??Ç§?§„É¨?πÂÖÖ?ªÂô®?´Âä†?à„ÄÅBYOP?π„Éû?º„Éà?¶„Ç©?É„ÉÅ?õ„É´?Ä?º„ÅßApple Watch?†„Åë?ß„Å™?èGalaxy Watch?ÑPixel Watch?´„ÇÇÂØæÂøú?ô„Çã3-in-1??Ç§?§„É¨?πÂÖÖ?ªÂô®?åUltraCharge 25W ?¢„Ç∏?•„Éº?´Âºè?ÖÈõª?â„ÉÉ??Äç„Çí?∫Â£≤?Ç‚Ä?,
+          "url": "https://applech2.com/archives/20260310-belkin-ultracharge-modular-charging-dock-with-qi2-25w.html",
+          "urlToImage": "https://applech2.com/wp-content/uploads/2026/03/Belkin-UltraCharge-25W-Modular-Charging-Dock-features-1.webp",
+          "publishedAt": "2026-03-09T20:46:28Z",
+          "content": "BelkiniPhoneApple WatchSamsung GalaxyGalaxy SwatchGoogle PixelPixel Watch3-in-1Qi2UltraCharge 25W \r\nFoxconnBelkin International, Inc.202601CES 2026iPhoneApple WatchAndroidGoogle Pixel WatchSamsung Ga??[+508 chars]"
+        },
+        {
+          "source": {
+            "id": null,
+            "name": "Macdailynews.com"
+          },
+          "author": "MacDailyNews",
+          "title": "Apple just made it easier for people to become customers",
+          "description": "Apple bucked the industry trend of rising hardware prices this week by launching several affordable new products, catching Wall Street??nThe post Apple just made it easier for people to become customers appeared first on MacDailyNews.",
+          "url": "https://macdailynews.com/2026/03/05/apple-just-made-it-easier-for-people-to-become-customers/",
+          "urlToImage": "https://macdailynews.com/wp-content/uploads/2026/03/260304_macbook_neo.png",
+          "publishedAt": "2026-03-05T21:40:30Z",
+          "content": "MacBook Neo\r\nApple bucked the industry trend of rising hardware prices this week by launching several affordable new products, catching Wall Street and consumers off guard.\r\nAmid a backdrop of escala??[+2021 chars]"
+        },
+        {
+          "source": {
+            "id": null,
+            "name": "ARTnews"
+          },
+          "author": "Lmiller",
+          "title": "Christie?ôs Unveils New Rostrum by Jony Ive, Apple?ôs Former Chief Design¬†Officer",
+          "description": "Former Apple Inc. designer Jony Ive was hired to conceive Christie's new rostrum, replacing the Chippendale original.",
+          "url": "https://www.artnews.com/art-news/news/christies-unveils-new-rostrum-designed-jony-ive-apple-former-chief-design-office-1234775975/",
+          "urlToImage": null,
+          "publishedAt": "2026-03-06T16:35:27Z",
+          "content": "Jony Ive is arguably the world?ôs most well-known product designer, famed for all the iMacs, iPods, iPhones, and Apple Watches he conceived during his nearly three-decade tenure with Apple Inc. Now, h??[+1385 chars]"
+        },
+        {
+          "source": {
+            "id": null,
+            "name": "Road to VR"
+          },
+          "author": "Scott Hayden",
+          "title": "This Company Wants to Refresh Workers by Sticking Them in Tiny Pods With VR Headsets",
+          "description": "South Korea-based XR company¬†NP Inc¬†showed off a unique solution to combat employee fatigue¬†at Mobile World Congress (MWC) in Barcelona this week, combining a small pod with a VR headset. The News NP, developer of the MUA app for Quest, unveiled MUA?ôH (MUA Ho??,
+          "url": "https://www.roadtovr.com/vr-worker-pods-xr-meditation/",
+          "urlToImage": "https://roadtovrlive-5ea0.kxcdn.com/wp-content/uploads/2026/03/muah-vr-pod.jpg",
+          "publishedAt": "2026-03-05T15:49:37Z",
+          "content": "South Korea-based XR company¬†NP Inc¬†showed off a unique solution to combat employee fatigue¬†at Mobile World Congress (MWC) in Barcelona this week, combining a small pod with a VR headset.\r\nThe News\r\n??[+3285 chars]"
+        },
+        {
+          "source": {
+            "id": null,
+            "name": "Technicshistory.com"
+          },
+          "author": "View all posts by technicshistory",
+          "title": "The Home Computer War",
+          "description": "In 1979, Atari and Texas Instruments (TI) established a new category of computer, which hybridized the features of the personal computer and video game console. Like a video game system, they had d??,
+          "url": "https://technicshistory.com/2026/03/06/the-home-computer-war/",
+          "urlToImage": "https://technicshistory.com/wp-content/uploads/2026/03/ti-home-computer-classroom.png",
+          "publishedAt": "2026-03-06T02:04:04Z",
+          "content": "In 1979, Atari and Texas Instruments (TI) established a new category of computer, which hybridized the features of the personal computer and video game console. Like a video game system, they had ded??[+31055 chars]"
+        },
+        {
+          "source": {
+            "id": null,
+            "name": "Macdailynews.com"
+          },
+          "author": "MacDailyNews",
+          "title": "Apple TV?ôs dystopian series ?òSilo??season 4 wraps filming ahead of expected season 3 premiere this year",
+          "description": "Apple TV's dystopian series \"Silo\" is the story of the last ten thousand people on Earth, their mile-deep home protecting them from the??nThe post Apple TV?ôs dystopian series ?òSilo??season 4 wraps filming ahead of expected season 3 premiere this year appeared ??,
+          "url": "https://macdailynews.com/2026/03/06/apple-tvs-dystopian-series-silo-season-4-wraps-filming-ahead-of-expected-season-3-premiere-this-year/",
+          "urlToImage": "https://macdailynews.com/wp-content/uploads/2026/03/260306_silo.png",
+          "publishedAt": "2026-03-06T19:16:19Z",
+          "content": "Still from ?úSilo??Season 4 (image: Apple Inc.)\r\nApple TV?ôs dystopian series ?úSilo??is the story of the last ten thousand people on Earth, their mile-deep home protecting them from the toxic and deadl??[+2525 chars]"
+        },
+        {
+          "source": {
+            "id": null,
+            "name": "Prtimes.jp"
+          },
+          "author": null,
+          "title": "?ø„Çì?™„ÅÆ?ÄË°å„Éá?ì„ÉÉ?à„Ç´?º„Éâ ?•„ÅÆ?äÂæó?™„Ç≠?£„É≥?ö„Éº??,
+          "description": "[?™Âºè‰ºöÁ§æ?ø„Çì?™„ÅÆ?ÄË°?\n[?ªÂÉè: https://prcdn.freetls.fastly.net/release_image/72105/268/72105-268-47ca7e6248b059c22c20f9177dc13f98-1200x440.png?width=536&quality=85%2C75&format=jpeg&auto=webp&fit=bounds&am...",
+          "url": "https://prtimes.jp/main/html/rd/p/000000268.000072105.html",
+          "urlToImage": "https://prcdn.freetls.fastly.net/release_image/72105/268/72105-268-1aa10a8b9e2a603be0874f013ae8cd94-1202x630.png?format=jpeg&auto=webp&fit=bounds&width=2400&height=1260",
+          "publishedAt": "2026-03-06T06:40:28Z",
+          "content": "2026362026331\r\n1,0001,1005,000100\r\nJCB7,100*¬π\r\nApple Pay Google Pay QUICPay+()Apple PayJCB*¬≤\r\n1 20259\r\n2 Apple PayGoogle Pay \r\n3 1,000\r\n4 53135253\r\n Apple PayApple Inc.\r\n Google Pay Google LLC \r\n QUI??[+50 chars]"
+        }
+      ]
+    },
+    "error": null,
+    "details": null
+  },
+  "status": "OK",
+  "lim_aplc": {
+    "tx_id": "TX_NEWSAPI_HEADLINES"
+  }
+}

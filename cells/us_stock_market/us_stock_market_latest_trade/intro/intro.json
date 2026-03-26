@@ -1,0 +1,67 @@
+{
+    "cell_id": "US Stock_market_latest_trade",
+    "title": "US Stock Market Latest Trade",
+    "version": "v1.0",
+    "summary_1line": "Fetches the most recent actual trade price for one or more US stocks via US Stock.",
+    "description": "Read-only Market Data cell. Retrieves the last trade (price, size, timestamp) for symbols like AAPL. Relies on US Stock_config_loader for API Key initialization. Does not support order placement.",
+    "purpose": "Provides real-time or delayed latest market trade data based on the US Stock Market Data v2 API.",
+    "tags": [
+        "US Stock",
+        "market",
+        "trade",
+        "price",
+        "us-stock",
+        "read-only"
+    ],
+    "inputs": {
+        "inbox": {
+            "required_fields": [
+                "message.params.symbols"
+            ],
+            "accepted_inputs": [
+                "message.params.symbols",
+                "message.params.feed"
+            ],
+            "optional_fields": [
+                "message.params.include_raw"
+            ],
+            "example_minimal": {
+                "message": {
+                    "params": {
+                        "symbols": "AAPL,TSLA",
+                        "feed": "iex"
+                    }
+                }
+            }
+        }
+    },
+    "outputs": {
+        "outbox": {
+            "produces": [
+                "req_*__out.json"
+            ],
+            "status": "OK/FAIL"
+        }
+    },
+    "run": {
+        "entry": "python bridge.py",
+        "one_shot": true
+    },
+    "parameters": {
+        "stm_mapping": {
+            "priority_order": [
+                "message.params.symbols"
+            ],
+            "options_paths": [
+                "message.params",
+                "message.options",
+                "options"
+            ],
+            "pass_through_keys": [
+                "symbols",
+                "feed",
+                "include_raw"
+            ]
+        }
+    }
+}

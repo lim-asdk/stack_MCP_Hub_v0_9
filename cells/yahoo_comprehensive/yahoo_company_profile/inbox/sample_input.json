@@ -1,0 +1,10 @@
+{
+    "message": {
+        "params": {
+            "symbol": "AAPL"
+        }
+    },
+    "lim_aplc": {
+        "tx_id": "TX_SAMPLE_COMPANY_PROFILE"
+    }
+}

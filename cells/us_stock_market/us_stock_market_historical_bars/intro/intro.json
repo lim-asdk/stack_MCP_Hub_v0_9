@@ -1,0 +1,82 @@
+{
+    "cell_id": "US Stock_market_historical_bars",
+    "title": "US Stock Market Historical Bars",
+    "version": "v1.0",
+    "summary_1line": "Fetches historical OHLCV bar data for one or more US stocks over a flexible timeframe (1Min, 5Min, 1Day).",
+    "description": "Read-only Market Data cell. Retrieves historical bar data (open, high, low, close, volume) for given symbols over a specific time period. Supports various granularities like 1Min, 5Min, 15Min, 1Day, 1Week.",
+    "purpose": "Provides historical market data analysis capabilities, leveraging US Stock's robust v2 historical bars API.",
+    "tags": [
+        "US Stock",
+        "market",
+        "historical",
+        "bars",
+        "ohlcv",
+        "us-stock",
+        "read-only"
+    ],
+    "inputs": {
+        "inbox": {
+            "required_fields": [
+                "message.params.symbols",
+                "message.params.timeframe",
+                "message.params.start",
+                "message.params.end"
+            ],
+            "accepted_inputs": [
+                "message.params.symbols",
+                "message.params.timeframe",
+                "message.params.start",
+                "message.params.end",
+                "message.params.feed",
+                "message.params.limit"
+            ],
+            "optional_fields": [
+                "message.params.include_raw",
+                "message.params.adjustment"
+            ],
+            "example_minimal": {
+                "message": {
+                    "params": {
+                        "symbols": "NVDA",
+                        "timeframe": "1Day",
+                        "start": "2024-01-01T00:00:00Z",
+                        "end": "2024-01-10T00:00:00Z"
+                    }
+                }
+            }
+        }
+    },
+    "outputs": {
+        "outbox": {
+            "produces": [
+                "req_*__out.json"
+            ],
+            "status": "OK/FAIL"
+        }
+    },
+    "run": {
+        "entry": "python bridge.py",
+        "one_shot": true
+    },
+    "parameters": {
+        "stm_mapping": {
+            "priority_order": [
+                "message.params.symbols"
+            ],
+            "options_paths": [
+                "message.params",
+                "message.options",
+                "options"
+            ],
+            "pass_through_keys": [
+                "symbols",
+                "timeframe",
+                "start",
+                "end",
+                "feed",
+                "limit",
+                "adjustment"
+            ]
+        }
+    }
+}
