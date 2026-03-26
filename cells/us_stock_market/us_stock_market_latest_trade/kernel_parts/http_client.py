@@ -55,3 +55,4 @@ def perform_get(url: str, headers: dict, timeout_seconds: int = 15) -> dict:
             "text_preview": "",
             "error": f"Exception: {str(e)}"
         }
+

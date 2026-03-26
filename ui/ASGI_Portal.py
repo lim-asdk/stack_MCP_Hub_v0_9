@@ -70,3 +70,4 @@ if __name__ == "__main__":
     # proxy_headers=True is needed for GCP host/ip resolution.
     print(f"=== US Stock MCP Unified ASGI Portal Starting on http://0.0.0.0:{PORT} ===")
     uvicorn.run(app, host="0.0.0.0", port=PORT, proxy_headers=True, forwarded_allow_ips="*")
+

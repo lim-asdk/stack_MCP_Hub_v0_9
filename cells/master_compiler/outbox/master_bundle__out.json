@@ -330,64 +330,64 @@
     "news_sentiment": {
       "latest_news": [
         {
-          "source": "Yahoo",
+          "source": "market",
           "time": "2026-03-25 08:32",
           "headline": "Will Microsoft Ultimately Be an AI Beneficiary or Be Hurt by It?",
-          "url": "https://finnhub.io/api/news?id=3f1b041b8b6bd3ddbdd88e2f02f47f39007396e9e588ba9be91cb9a533b24911"
+          "url": "https://analyst.io/api/news?id=3f1b041b8b6bd3ddbdd88e2f02f47f39007396e9e588ba9be91cb9a533b24911"
         },
         {
-          "source": "Yahoo",
+          "source": "market",
           "time": "2026-03-25 08:26",
           "headline": "Is Rivian's $1.25 Billion Robotaxi Deal With Uber Really a Good One for Shareholders?",
-          "url": "https://finnhub.io/api/news?id=d375f5abe203c306bb43ecf781c2464fa6277321c7bfbad8b26a3522ccf7d278"
+          "url": "https://analyst.io/api/news?id=d375f5abe203c306bb43ecf781c2464fa6277321c7bfbad8b26a3522ccf7d278"
         },
         {
-          "source": "Yahoo",
+          "source": "market",
           "time": "2026-03-25 08:03",
           "headline": "Super Micro Faces Risk After Smuggling Case",
-          "url": "https://finnhub.io/api/news?id=a56bdf13a615c6c47029a5a126fca95ba3624ba03b74fd660fd851fb54e882f9"
+          "url": "https://analyst.io/api/news?id=a56bdf13a615c6c47029a5a126fca95ba3624ba03b74fd660fd851fb54e882f9"
         },
         {
-          "source": "Yahoo",
+          "source": "market",
           "time": "2026-03-25 08:03",
           "headline": "Nvidia Rises Despite Export Pressure",
-          "url": "https://finnhub.io/api/news?id=741ca1acead5fc1bbd40852305a1ff9c056aa2821ff283d0fccb26c0e538adb8"
+          "url": "https://analyst.io/api/news?id=741ca1acead5fc1bbd40852305a1ff9c056aa2821ff283d0fccb26c0e538adb8"
         },
         {
-          "source": "Yahoo",
+          "source": "market",
           "time": "2026-03-25 07:57",
           "headline": "Better Crypto Buy: Bitcoin or a Bitcoin ETF?",
-          "url": "https://finnhub.io/api/news?id=33f8ad25b20c8a1f63973ff62f21553c38c746cc014eac7c0cabd714b05237b6"
+          "url": "https://analyst.io/api/news?id=33f8ad25b20c8a1f63973ff62f21553c38c746cc014eac7c0cabd714b05237b6"
         },
         {
-          "source": "Yahoo",
+          "source": "market",
           "time": "2026-03-25 07:35",
           "headline": "Better AI Buy: Nvidia vs Micron",
-          "url": "https://finnhub.io/api/news?id=1120feb7586dcd5f529a90c7c55ac626e3d6d44654eefe03a463580bedee53ab"
+          "url": "https://analyst.io/api/news?id=1120feb7586dcd5f529a90c7c55ac626e3d6d44654eefe03a463580bedee53ab"
         },
         {
-          "source": "Yahoo",
+          "source": "market",
           "time": "2026-03-25 07:26",
           "headline": "Arm to Sell Its Own Chips, Eyeing Sales Goal of $15 Billion",
-          "url": "https://finnhub.io/api/news?id=892224e3b111d40603dc62abef8007e91b0b831140d1728c05a5973941b9f371"
+          "url": "https://analyst.io/api/news?id=892224e3b111d40603dc62abef8007e91b0b831140d1728c05a5973941b9f371"
         },
         {
-          "source": "Yahoo",
+          "source": "market",
           "time": "2026-03-25 07:25",
           "headline": "SoFi: The Short Thesis",
-          "url": "https://finnhub.io/api/news?id=4b0bd697b9bbfd47f5ef12b4ef8e83259b3be204115aaefab8d08c767342e9c2"
+          "url": "https://analyst.io/api/news?id=4b0bd697b9bbfd47f5ef12b4ef8e83259b3be204115aaefab8d08c767342e9c2"
         },
         {
-          "source": "Yahoo",
+          "source": "market",
           "time": "2026-03-25 07:21",
           "headline": "This Under-the-Radar AI Stock Could Be a Better Buy Than Nvidia",
-          "url": "https://finnhub.io/api/news?id=59833d3b0cb2081ff90edb84bcf21674c4728d880c3192cce939966712c9bb11"
+          "url": "https://analyst.io/api/news?id=59833d3b0cb2081ff90edb84bcf21674c4728d880c3192cce939966712c9bb11"
         },
         {
-          "source": "Yahoo",
+          "source": "market",
           "time": "2026-03-25 07:08",
           "headline": "Here's Why Nvidia's Stock Looks ?˜Relatively Cheap' According to These Experts",
-          "url": "https://finnhub.io/api/news?id=01798dfd656168d21955f8d3647f9db4cf3db0e55aef616e37057c4a793361ae"
+          "url": "https://analyst.io/api/news?id=01798dfd656168d21955f8d3647f9db4cf3db0e55aef616e37057c4a793361ae"
         }
       ],
       "sentiment": {
@@ -670,3 +670,4 @@
     }
   }
 }
+

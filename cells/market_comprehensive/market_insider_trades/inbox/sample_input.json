@@ -1,0 +1,11 @@
+{
+    "message": {
+        "params": {
+            "symbol": "TSLA"
+        }
+    },
+    "lim_aplc": {
+        "tx_id": "TX_SAMPLE_INSIDER_TRADES"
+    }
+}
+

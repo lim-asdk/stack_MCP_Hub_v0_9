@@ -1,0 +1,9 @@
+{
+    "request_id": "test_market_quote_001",
+    "message": {
+        "params": {
+            "symbols": "AAPL,MSFT"
+        }
+    }
+}
+

@@ -49,3 +49,4 @@ C:/program_files/.venv/Scripts/python.exe C:/program_files/server/cells_apply/US
 2. `[?�로?�트루트]\config\config_grace_apis.json` (로컬 경로)
 
 *?�작: Antigravity (Advanced Agentic Coding Team)*
+

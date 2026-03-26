@@ -80,15 +80,15 @@ def orchestrate_tiger(symbol: str):
     print(f"--- [Master Orchestrator] Triggering Subprocess Execution for {symbol} ---")
     
     tasks = [
-         ("yahoo_comprehensive/yahoo_company_profile", symbol, None),
-         ("yahoo_comprehensive/yahoo_analyst_ratings", symbol, None),
-         ("yahoo_comprehensive/yahoo_insider_trades", symbol, None),
-         ("yahoo_comprehensive/yahoo_fin_statements", symbol, None),
-         ("fmp_comprehensive/fmp_financial_metrics", symbol, None),
-         ("finnhub_comprehensive/finnhub_company_news", symbol, None),
-         ("finnhub_comprehensive/finnhub_peers", symbol, None),
+         ("market_comprehensive/market_company_profile", symbol, None),
+         ("market_comprehensive/market_analyst_ratings", symbol, None),
+         ("market_comprehensive/market_insider_trades", symbol, None),
+         ("market_comprehensive/market_fin_statements", symbol, None),
+         ("financial_comprehensive/financial_financial_metrics", symbol, None),
+         ("analyst_comprehensive/analyst_company_news", symbol, None),
+         ("analyst_comprehensive/analyst_peers", symbol, None),
          ("US Stock_market/US Stock_market_historical_bars", symbol, {"symbols": symbol, "timeframe": "1Day"}),
-         ("yahoo_comprehensive/yahoo_market_ranks", symbol, None)
+         ("market_comprehensive/market_market_ranks", symbol, None)
     ]
     
     with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
@@ -110,3 +110,4 @@ if __name__ == "__main__":
     else:
         target_symbol = "NVDA"
     orchestrate_tiger(target_symbol)
+

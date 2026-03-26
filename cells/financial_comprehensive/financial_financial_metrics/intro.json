@@ -1,0 +1,31 @@
+{
+  "name": "financial_financial_metrics",
+  "category": "comprehensive",
+  "description": "주요 ?�무 모형 기반 기초 지??(financial Profile)",
+  "version": "1.0",
+  "author": "Antigravity",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "symbol": {
+        "type": "string",
+        "description": "주식 ?�커 ?�볼 (?? AAPL)"
+      }
+    },
+    "required": [
+      "symbol"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "symbol": {
+        "type": "string"
+      },
+      "metrics": {
+        "type": "array"
+      }
+    }
+  }
+}
+

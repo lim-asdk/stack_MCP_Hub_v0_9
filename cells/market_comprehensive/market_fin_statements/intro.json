@@ -1,0 +1,34 @@
+{
+  "name": "market_fin_statements",
+  "category": "comprehensive",
+  "description": "?µÏã¨ ?¨Î¨¥ ?òÏù¥?ºÏù¥??Îß§Ï∂ú, ?úÏù¥???? Î∞?Í∏∞Í? Ï£ºÏ£º ?¥Ïó≠ ?òÏßë",
+  "version": "1.0",
+  "author": "Antigravity",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "symbol": {
+        "type": "string",
+        "description": "Ï£ºÏãù ?∞Ïª§ ?¨Î≥º (?? AAPL)"
+      }
+    },
+    "required": [
+      "symbol"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "symbol": {
+        "type": "string"
+      },
+      "financials": {
+        "type": "array"
+      },
+      "institutional_holders": {
+        "type": "array"
+      }
+    }
+  }
+}
+

@@ -1,0 +1,31 @@
+{
+  "name": "news_company_headlines",
+  "category": "comprehensive",
+  "description": "???¸ê³„ ?´ìŠ¤ë¥??Œì‹±?˜ëŠ” news ê¸°ë°˜ ?€",
+  "version": "1.0",
+  "author": "Antigravity",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string",
+        "description": "ê²€?‰í•  ê¸°ì—… ëª…ì¹­?´ë‚˜ ?¤ì›Œ??(?? Apple Inc)"
+      }
+    },
+    "required": [
+      "query"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "query": {
+        "type": "string"
+      },
+      "articles": {
+        "type": "array"
+      }
+    }
+  }
+}
+

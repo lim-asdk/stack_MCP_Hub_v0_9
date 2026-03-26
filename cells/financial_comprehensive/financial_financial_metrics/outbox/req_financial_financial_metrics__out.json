@@ -1,0 +1,14 @@
+{
+  "message": {
+    "source": "financial_financial_metrics",
+    "timestamp": "2026-03-10T23:12:33.770508+00:00",
+    "data": {},
+    "error": "HTTP Error 403: Forbidden",
+    "details": null
+  },
+  "status": "FAIL",
+  "lim_aplc": {
+    "tx_id": "TX_financial_METRICS"
+  }
+}
+

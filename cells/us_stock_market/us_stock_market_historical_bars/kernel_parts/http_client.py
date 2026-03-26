@@ -46,3 +46,4 @@ def perform_get(url: str, headers: dict = None, timeout: int = 15) -> dict:
             "ok": False,
             "error": f"Exception: {str(e)}\n{traceback.format_exc()}"
         }
+

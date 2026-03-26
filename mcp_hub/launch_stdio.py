@@ -12,3 +12,4 @@ if __name__ == "__main__":
     print("=== US Stock MCP Hub (STDIO Port) Starting... ===", file=sys.stderr)
     register_all_tools()
     mcp.run()
+

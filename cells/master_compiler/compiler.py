@@ -28,15 +28,15 @@ def collect_and_compile(symbol: str) -> dict:
     
     # Paths to individual outboxes
     paths = {
-        "profile": os.path.join(base_dir, "yahoo_comprehensive", "yahoo_company_profile", "outbox", "req_company_profile__out.json"),
-        "metrics": os.path.join(base_dir, "fmp_comprehensive", "fmp_financial_metrics", "outbox", "req_financial_metrics__out.json"),
-        "consensus": os.path.join(base_dir, "yahoo_comprehensive", "yahoo_analyst_ratings", "outbox", "req_analyst_ratings__out.json"),
-        "insider": os.path.join(base_dir, "yahoo_comprehensive", "yahoo_insider_trades", "outbox", "req_insider_trades__out.json"),
-        "fin_stmts": os.path.join(base_dir, "yahoo_comprehensive", "yahoo_fin_statements", "outbox", "req_fin_statements__out.json"),
-        "news": os.path.join(base_dir, "finnhub_comprehensive", "finnhub_company_news", "outbox", "req_company_news__out.json"),
-        "peers": os.path.join(base_dir, "finnhub_comprehensive", "finnhub_peers", "outbox", "req_peers__out.json"),
+        "profile": os.path.join(base_dir, "market_comprehensive", "market_company_profile", "outbox", "req_company_profile__out.json"),
+        "metrics": os.path.join(base_dir, "financial_comprehensive", "financial_financial_metrics", "outbox", "req_financial_metrics__out.json"),
+        "consensus": os.path.join(base_dir, "market_comprehensive", "market_analyst_ratings", "outbox", "req_analyst_ratings__out.json"),
+        "insider": os.path.join(base_dir, "market_comprehensive", "market_insider_trades", "outbox", "req_insider_trades__out.json"),
+        "fin_stmts": os.path.join(base_dir, "market_comprehensive", "market_fin_statements", "outbox", "req_fin_statements__out.json"),
+        "news": os.path.join(base_dir, "analyst_comprehensive", "analyst_company_news", "outbox", "req_company_news__out.json"),
+        "peers": os.path.join(base_dir, "analyst_comprehensive", "analyst_peers", "outbox", "req_peers__out.json"),
         "bars": os.path.join(base_dir, "US Stock_market", "US Stock_market_historical_bars", "outbox", "req_historical_bars__out.json"),
-        "ranks": os.path.join(base_dir, "yahoo_comprehensive", "yahoo_market_ranks", "outbox", "req_market_ranks__out.json"),
+        "ranks": os.path.join(base_dir, "market_comprehensive", "market_market_ranks", "outbox", "req_market_ranks__out.json"),
     }
     
     compiled = {
@@ -67,7 +67,7 @@ def collect_and_compile(symbol: str) -> dict:
             compiled["ui_zones"]["overview_core"]["name"] = prof_data.get("company_name", "-")
             compiled["ui_zones"]["overview_core"]["sector"] = prof_data.get("sector", "-")
             
-            # --- Yahoo Price Fallback ---
+            # --- market Price Fallback ---
             y_price = prof_data.get("price")
             y_close = prof_data.get("prev_close")
             if y_price:
@@ -98,7 +98,7 @@ def collect_and_compile(symbol: str) -> dict:
         except Exception as e:
              print(f"Error parsing consensus: {e}")
              
-    # --- 2b. Load FMP Metrics (Deep Financials) ---
+    # --- 2b. Load financial Metrics (Deep Financials) ---
     metrics_defaults = {
         "grossMargin": "44.1%", "operatingMargin": "29.8%", "netMargin": "25.3%",
         "fcfYield": "3.8%", "debtToEquity": "1.45", "currentRatio": "0.99"
@@ -109,9 +109,9 @@ def collect_and_compile(symbol: str) -> dict:
             with open(paths["metrics"], 'r', encoding='utf-8') as f:
                 payload = json.load(f)
                 if payload.get("status") == "OK":
-                    fmp_metrics = payload.get("message", {}).get("data", {}).get("keyMetrics", [])
-                    if fmp_metrics:
-                        latest = fmp_metrics[0]
+                    financial_metrics = payload.get("message", {}).get("data", {}).get("keyMetrics", [])
+                    if financial_metrics:
+                        latest = financial_metrics[0]
                         compiled["ui_zones"]["fundamentals"]["metrics"]["debtToEquity"] = format_number(latest.get("debtToEquity"), is_currency=False)
                         compiled["ui_zones"]["fundamentals"]["metrics"]["currentRatio"] = format_number(latest.get("currentRatio"), is_currency=False)
                         compiled["ui_zones"]["fundamentals"]["metrics"]["fcfYield"] = format_number(latest.get("freeCashFlowYield"), is_pct=True)
@@ -264,3 +264,4 @@ def collect_and_compile(symbol: str) -> dict:
 if __name__ == "__main__":
     out_path = collect_and_compile("AAPL")
     print(f"[Master Compiler] Successfully bundled UI data to: {out_path}")
+

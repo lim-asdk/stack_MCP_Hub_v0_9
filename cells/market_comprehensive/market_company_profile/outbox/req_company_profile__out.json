@@ -1,0 +1,26 @@
+{
+  "message": {
+    "source": "orchestrator_trigger",
+    "timestamp": "2026-03-25T01:08:58.652681+00:00",
+    "data": {
+      "symbol": "NVDA",
+      "company_name": "NVIDIA Corporation",
+      "price": 175.2,
+      "prev_close": 175.68,
+      "sector": "Technology",
+      "industry": "Semiconductors",
+      "ceo": "Mr. Jen-Hsun  Huang",
+      "website": "https://www.nvidia.com",
+      "dividend_yield": 0.02,
+      "market_cap": 4258235940864,
+      "summary": "NVIDIA Corporation operates as a data center scale AI infrastructure company. The company operates through two segments, Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. The company sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants worldwide. It has a collaboration with Tech Mahindra Limited to develop artificial intelligence powered telco network operations reasoning agent. The company has a strategic partnership with Lumentum Holdings Inc. to develop optics technologies for AI and data centers. It also has a strategic partnership with Nebius Group N.V. to develop and deploy hyperscale cloud for the artificial intelligence market. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California.",
+      "forward_pe": 15.760569,
+      "price_to_book": 27.070456,
+      "roe": 1.01485,
+      "peg_ratio": null
+    },
+    "error": null
+  },
+  "status": "OK"
+}
+

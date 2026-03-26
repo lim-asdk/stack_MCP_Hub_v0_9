@@ -1,0 +1,11 @@
+{
+    "message": {
+        "params": {
+            "symbol": "AAPL"
+        }
+    },
+    "lim_aplc": {
+        "tx_id": "TX_analyst_PEERS"
+    }
+}
+

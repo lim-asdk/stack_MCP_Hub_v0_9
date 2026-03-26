@@ -321,3 +321,4 @@ if __name__ == "__main__":
     # Default to stdio for CLI use
     register_all_tools()
     mcp.run()
+
